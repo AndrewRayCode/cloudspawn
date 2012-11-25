@@ -1,0 +1,7 @@
+.cloud-bubble {
+    position:absolute;
+    width:10px;
+    height:10px;
+    background:#fff;
+    border-radius:100%;
+}
