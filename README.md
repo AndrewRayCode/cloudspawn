@@ -70,8 +70,9 @@ If you wish to add padding, add it to `.content`, not `.container`. Otherwise,
 you may omit the `.content` element.
 
 You can change the color of the cloud by changing the background color of the
-`.container` element as well as the `.bubble` element. The bottom bubbles also
-have a class of .bubble-bottom if you wish to style them differently.
+`.container` element as well as the `.cloud-bubble` element. The bottom bubbles
+also have a class of .cloud-bubble-bottom if you wish to style them
+differently.
 
 Chaining when it's done is easy enough, just listen for the animation to finish
 
