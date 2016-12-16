@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title></title>
+        <style>
+            html, body {
+                margin:0;
+                padding: 0;
+                background:linear-gradient(#7ec0ee, #253947);
+                height:100%;
+            }
+            .container {
+                position:absolute; /* required */
+                background:#fff;   /* if you change this, change .bubble background */
+                left:-400px;       /* negative distance of width */
+
+                /* following are up to you */
+                top:60px;
+                width:400px;
+                height:150px;
+            }
+            .content {
+                position:relative;
+                z-index:2;
+                padding:20px;
+            }
+        </style>
+        <link rel="stylesheet" href="cloudspawn.css" type="text/css" />
+    </head>
+    <body>
+        <div class="container" id="cloudspawn">
+            <div class="content">
+                Cloud content
+            </div>
+        </div>
+    </body>
+    <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script src="cloudspawn.js"></script>
+    <script>
+        var spawn = $('#cloudspawn').cloudSpawn();
+
+        spawn.cloudSpawnShow();
+
+        setInterval(function() {
+            spawn.cloudSpawnShow();
+        }, 6000 );
+
+        setTimeout( function() {
+            spawn.cloudSpawnHide();
+            setInterval(function() {
+                spawn.cloudSpawnHide();
+            }, 6000 );
+        }, 3000 );
+
+    </script>
+</html>
