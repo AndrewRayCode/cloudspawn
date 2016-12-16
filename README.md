@@ -4,7 +4,7 @@ Cloudspawn jQuery Plugin
 Swipe in an elment from the left, styled like a cloud, with animated puffs.
 Requires jQuery >= 1.8.2
 
-## [Demo](http://jsfiddle.net/delvarworld/vVFxS/7/)
+## [Demo](http://andrewray.me/cloudspawn/)
 
 ## Usage
 
